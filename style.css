@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background: linear-gradient(to bottom, #eecbb3 0%, #f2ece2 50%, #f2ece2 100%);
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  font-size: 18px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.menuParent {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menuParent li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menuParent li:hover {
+  color: #c43a31;
+}
+
+.navButton {
+  padding: 10px 40px;
+  border-radius: 15px;
+  background: #2d1312;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  background: #c43a31;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.heroText {
+  font-size: 70px;
+  color: #2d1312;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  max-width: 750px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.pata {
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  width: 180px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 50px 10px 50px;
+}
+
+.menuTitle {
+  font-size: 77px;
+  padding-bottom: 30px;
+}
+
+.menu-text {
+  font-size: 24px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menuButton,
+.menuButtonPizza {
+  padding: 10px 40px;
+  border-radius: 15px;
+  border: 2px solid #2d1312;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menuButton:hover {
+  background-color: #2d1312;
+  color: white;
+}
+
+.menuButtonPizza {
+  background-color: #2d1312;
+  color: white;
+}
+
+.pizzaContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pizza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 320px;
+  width: 100%;
+}
+
+.pizza2 {
+  position: relative;
+}
+
+.frame {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  left: 100px;
+}
+
+.pizzaImage {
+  width: 200px;
+  margin: 5px;
+}
+
+.pizzaPrice {
+  padding: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.arroww {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #2d1312;
+  border-radius: 20px;
+}
+
+.arroww p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  padding: 0 100px;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderone p {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.swiper-slide svg {
+  position: absolute;
+  bottom: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+.teamTextContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+.teamTextContainer p {
+  font-size: 14px;
+  max-width: 500px;
+}
+.secTeam {
+  background: linear-gradient(to top, #eecbb3 0%, #f2ece2 50%, #f2ece2 100%);
+  margin: 100px 0px;
+  padding: 40px 50px;
+}
+.members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+.member img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+.member p {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.secEvents {
+  margin: 50px 0px;
+  padding: 40px 50px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 40px;
+}
+
+.image-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.image-grid p {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 27px;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay {
+  position: relative;
+  width: 45vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.oneoverlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(122, 92, 59, 0.3);
+}
+
+.site-footer {
+  background-color: #e6ddd0;
+  padding: 60px 40px;
+  font-family: "Arial", sans-serif;
+  color: #1a1a1a;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links nav {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.brand-name {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #1a1a1a;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* Responsive */
+.footer-newsletter {
+  width: 250px;
+}
+
+.footer-newsletter p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+.newsletter-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #757575;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+  .footer-links nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pizzaContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroText {
+    font-size: 55px;
+  }
+  .image-overlay {
+    width: 100%;
+    max-width: 620px;
+    height: 500px;
+    background-image: url("assets/event-one.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .pizzaContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heroText {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1635px) {
+  .teamTextContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+}
